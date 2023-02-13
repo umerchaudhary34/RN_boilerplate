@@ -42,5 +42,11 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "yarn lint",
+      "yarn format"
+    ]
   }
 }
